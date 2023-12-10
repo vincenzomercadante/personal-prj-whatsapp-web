@@ -1,0 +1,74 @@
+:root{
+    --main-color: #202c33;
+    --icon-color: #aebac1;
+    --chat-bg: #111b21;
+    --notification-color: #00a884;
+    --action-btn-color: #8696a0;
+    --base-space: 10px;
+}
+
+/* ! reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ! generics */
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    overflow: hidden;
+}
+
+img{
+    display: block;
+}
+
+span{
+    display: inline-block;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.w-70{
+    width: 70%;
+}
+
+.w-30{
+    width: 30%;
+}
+
+/* ! header */
+.header{
+    background-color: var(--main-color);
+    max-height: 80px;
+    padding: var(--base-space);
+}
+
+.header .header-right{
+    padding: var(--base-space);
+    justify-content: space-between;
+    align-items: center;
+    border-right: 1px solid #2f3b43;
+}
+
+.user-photo-container img{
+    border-radius: 50%;
+    height: 60px;
+}
+
+.action-btn-container{
+    color: var(--icon-color);
+    margin: 0 5px;
+}
+
+.action-btn-container .icon{
+    padding: var(--base-space);
+    margin: 0 var(--base-space);
+}
+
+.icon svg{
+    transform: scale(1.4);
+}
